@@ -1,0 +1,19 @@
+{
+  "name": "cook-book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "lite-server --baseDir=src",
+    "test": "mocha --timeout 10000"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "lite-server": "^2.6.1",
+    "mocha": "^11.4.0",
+    "playwright-chromium": "^1.52.0"
+  }
+}
