@@ -1,12 +1,20 @@
-import { render, html } from "../lib/lit-html.js";
-
-const template = () => html`
-
-`;
-
+import page from "../lib/page.js"
+import { remove } from "../api/itemsApi.js";
 
 export default async function deleteView(ctx) {
-    //TODO: Implement this view
+    const itemId = ctx.params.itemId;
+    const isConfirmed = confirm('Are you sure you want to delete this?')
 
-    render(template());
+    if (!isConfirmed) {
+        return;
+    }
+
+    try {
+        await remove(itemId);
+
+        page.redirect('/dashboard')
+    } catch (err) {
+        alert(err.message);
+    }
+
 }

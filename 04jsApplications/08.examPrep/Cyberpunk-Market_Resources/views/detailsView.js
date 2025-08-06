@@ -1,7 +1,9 @@
 import { render, html } from "../lib/lit-html.js";
 import { getOne } from "../api/itemsApi.js";
+import { getUserData } from "../utils/userUtils.js";
 
-const template = (item) => html`
+
+const template = (item, isOwner) => html`
     <section id="details">
         <div id="details-wrapper">
           <div>
@@ -15,11 +17,14 @@ const template = (item) => html`
               <p class="type">Type: ${item.type}</p>
               <p id="item-description">${item.description}</p>
             </div>
-            <!--Edit and Delete are only for creator-->
-            <div id="action-buttons">
-              <a href="" id="edit-btn">Edit</a>
-              <a href="" id="delete-btn">Delete</a>
-            </div>
+		${isOwner
+		? html`
+			<div id = "action-buttons" >
+			<a href="/dashboard/${item._id}/edit" id="edit-btn">Edit</a>
+			<a href="/dashboard/${item._id}/delete" id="delete-btn">Delete</a>
+			</div >`
+		: ''
+	}  
           </div>
         </div>
       </section>
@@ -27,8 +32,13 @@ const template = (item) => html`
 
 
 export default async function detailsView(ctx) {
-    const itemId = ctx.params.itemId;
-    const item = await getOne(itemId);
+	const itemId = ctx.params.itemId;
+	const item = await getOne(itemId);
 
-    render(template(item));
+	const userData = getUserData();
+	const isOwner = userData._id === item._ownerId;
+
+
+
+	render(template(item, isOwner));
 }

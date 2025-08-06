@@ -32,7 +32,7 @@ async function createFormSubmitHandler(e) {
     const data = Object.fromEntries(formData);
 
     //Validate empty fields
-    if (!Object.keys(data).every(value => !!value)) {  //check if every value is truthy
+    if (!Object.values(data).every(value => !!value)) {  //check if every value is truthy
         return alert('All fields are required!')
     };
 

@@ -21,37 +21,37 @@ const template = (onSubmit) => html`
 
 export default async function registerView(ctx) {
 
-    render(template(registerFormSubmitHandler));
+	render(template(registerFormSubmitHandler.bind(ctx)));
 }
 
 async function registerFormSubmitHandler(e) {
-    e.preventDefault();
+	e.preventDefault();
 
-    //Get form data
-    const formData = new FormData(e.currentTarget);
-    const email = formData.get('email');
-    const password = formData.get('password');
-    const rePassword = formData.get('re-password');
+	//Get form data
+	const formData = new FormData(e.currentTarget);
+	const email = formData.get('email');
+	const password = formData.get('password');
+	const rePassword = formData.get('re-password');
 
-    //Validation
-    if (email === '' || password === '' || rePassword === '') {
-        return alert('Fields are required')
-    }
-    if (password !== rePassword) {
-        return alert('Passwords do not match!');
-    }
+	//Validation
+	if (email === '' || password === '' || rePassword === '') {
+		return alert('Fields are required')
+	}
+	if (password !== rePassword) {
+		return this.showNotification('Passwords don\'t match');
+	}
 
-    //Error handling
-    try {
-        //create request 
-        const userData = await register(email, password);
+	//Error handling
+	try {
+		//create request 
+		const userData = await register(email, password);
 
-        //save user data 
-        saveUserData(userData);
+		//save user data 
+		saveUserData(userData);
 
-        //redirect to homepage
-        page.redirect('/');
-    } catch (error) {
-        alert(error.message);
-    }
+		//redirect to homepage
+		page.redirect('/');
+	} catch (error) {
+		alert(error.message);
+	}
 }
