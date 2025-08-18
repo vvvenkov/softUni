@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./images/bg.png') repeat;
+    background-size: auto;
+    font-family: 'Merriweather', serif;
+    color: #000;
+}
+
+header {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #5A5F8D;
+    border: 2px solid #000;
+    padding: 12.9px 41.5px;
+    border-radius: 12px;
+    font-weight: bold;
+    background: white;
+}
+
+
+
+.navbar .active a {
+    color: #ff5b5b;
+    border-color: #ff5b5b;
+}
+
+.book-trip {
+    margin: 60px 0;
+}
+
+.book-trip a {
+    font-family: 'Lato', sans-serif;
+    background: white;
+    padding: 12px 40px;
+    border-radius: 30px;
+    color: #5A5F8D;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.hero-text p {
+    margin: 15px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    font-family: 'Lato', sans-serif;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.red-btn {
+    background: #ff5b5b;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+
+}
+
+.blue-btn {
+    color: #314584;
+    border-radius: 30px;
+    box-shadow: 5px 3px 0px rgba(0, 0, 0, 0.15);
+    border: 5px;
+
+}
+
+.hero-image img {
+    max-width: 380px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.cards .card {
+    width: 90%;
+    max-width: 500px;
+}
+
+
+
+.card {
+    background: white;
+    text-align: center;
+    color: 314584;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 12px rgba(0, 0, 0, 0.15);
+    max-width: 320px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card img {
+    max-width: 120px;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.4rem;
+}
+
+.card p {
+    color: #314584;
+    font-size: 0.95rem;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.about {
+    border: 2px dashed black;
+    padding: 30px;
+    background-color: white;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: #314584;
+    font-family: 'Lato', sans-serif;
+}
+
+.plan-journey {
+    text-align: center;
+    margin: 50px 0;
+}
+
+form {
+    background: #E4DDDD;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+input,
+textarea,
+button {
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #4A4848;
+    border-radius: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background: #333;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    background: #0C0C0C;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

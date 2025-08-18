@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0B0F1A;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: #111827;
+    display: flex;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 2px solid #343849;
+    max-width: 1183px;
+    width: 100%;
+}
+
+.left-section {
+    flex: 0.7;
+    padding-right: 0px; 
+}
+
+.left-section h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.left-section h2 {
+    margin: 5px 0 20px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #d4af37;
+}
+
+.label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #aaa;
+}
+
+.middle-section {
+    flex: 0.8;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-right: 2px;
+    margin-left: -200px; 
+    border-right: 1px solid rgba(255, 255, 255, 0.2); /* single white divider here */
+}
+
+.middle-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right-section {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.right-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
+}
+
+.stat {
+    background-color: #1F2937;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.stat span {
+    font-weight: bold;
+}

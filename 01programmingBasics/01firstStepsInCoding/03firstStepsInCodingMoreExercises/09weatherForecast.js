@@ -5,6 +5,6 @@ function weatherForecast(input) {
     if (weather === "sunny") {
         console.log("It's warm outside!")
     } else {
-        console.log("It's cold outside!");
-    }
-}
+        console.log("It's cold outside!");      b
+
+
