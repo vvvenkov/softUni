@@ -7,8 +7,9 @@ import addBreedTemplate from './views/addBreed.html.js';
 import siteCss from './content/styles/site.css.js';
 import cats from './catsData.js';
 
-const server = http.createServer((req, res) => {
+const server = http.createServer((req, res)=> {
     log(req.url)
+    log('da')
 
     if (req.url === '/content/styles/site.css') {
         res.writeHead(200, {
