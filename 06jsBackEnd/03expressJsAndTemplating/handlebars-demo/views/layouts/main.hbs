@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars | {{pageTitle}}</title>
+    {{!-- <title>{{#if pageTitle}}{{pageTitle}}{{else}}Handlebars{{/if}}</title> --}}
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/home">Second Home</a></li>
+            <li><a href="/contacts">Contacts</a></li>
+            <li><a href="/contacts/add">Add</a></li>
+        </ul>
+    </nav>
+
+    {{{body}}}
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<h1>Contacts</h1>
+
+{{#if subtitle}}
+    <h3>{{subtitle}}</h3>
+{{else}}
+    <h3>Phonebook</h3>
+{{/if}}
+
+<ul>
+    {{#each contacts}}
+        {{!-- {{>contact}} --}}
+        <li>{{name}} - {{phone}}</li>
+    {{else}}
+        <li>No Entries Yet!</li>
+    {{/each}}
+</ul>
