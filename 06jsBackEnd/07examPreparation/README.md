@@ -11,7 +11,7 @@
 - [x] Install express `npm i express'
 - [x] Init express server  
 - [x] Add public resources
-- [ ] Setup static folder 
+- [ ] Setup static middleware 
 - [ ] Add body parser middleware
 - [ ] Setup routes file 
 - [ ] Add home controller
