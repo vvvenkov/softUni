@@ -1,7 +1,7 @@
 {
   "name": "07exampreparation",
   "version": "1.0.0",
-  "description": "1. Initialize Projetct\r - [ ] Init npm project \r - [ ] Add start file\r - [ ] Change module system\r - [ ] Add Dev Script\r - [ ] Config Debugging",
+  "description": "JS Back-End Exam skeleton",
   "main": "index.js",
   "scripts": {
     "dev": "node --watch src/index.js"
