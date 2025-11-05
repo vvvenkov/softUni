@@ -1,8 +1,9 @@
-console.log('iit works')
-console.log('iit works')
+import express from 'express'
 
-console.log('iit works')
+const app = express();
 
-console.log('iit works')
+app.get('/', (req, res) => {
+    res.send('It works');
+});
 
-console.log('iit works')
+app.listen(3000, () => console.log('Server is listening on http://localhost:3000'))
