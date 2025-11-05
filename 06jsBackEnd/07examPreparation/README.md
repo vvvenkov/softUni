@@ -4,5 +4,5 @@
 - [x] Init npm project 
 - [x] Change module system
 - [x] Add start file `src/index.js`
-- [ ] Add Dev Script
-- [ ] Config Debugging
+- [x] Add Dev Script
+- [x] Config Debugging with runtimeArgs
