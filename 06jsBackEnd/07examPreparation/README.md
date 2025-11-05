@@ -16,4 +16,13 @@
 - [x] Add home controller
 - [x] Setup routes file 
 
-3. 
+3. Handlebars 
+- [x] Install handlebars `npm i express-handlebars`
+- [x] Config handlebars as view engine 
+- [x] Config views file extensions
+- [x] Change views directory
+- [x] Add resources to views folder
+- [x] Add home view
+- [ ] Add layout 
+- [ ] Add partials directory
+- [ ] Config handlebars to read mongoose documents
