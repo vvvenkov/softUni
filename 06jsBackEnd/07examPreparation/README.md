@@ -8,9 +8,9 @@
 - [x] Config Debugging with runtimeArgs
 
 2. Express setup
-- [ ] Install express `npm i express'
-- [ ] Init express server  
-- [ ] Add public resources
+- [x] Install express `npm i express'
+- [x] Init express server  
+- [x] Add public resources
 - [ ] Setup static folder 
 - [ ] Add body parser middleware
 - [ ] Setup routes file 
