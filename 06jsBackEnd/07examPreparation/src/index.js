@@ -1,5 +1,5 @@
-import express from 'express'
-import homeController from './controllers/homeController.js';
+import express, { Router } from 'express'
+import routes from './routes.js';
 
 const app = express();
 
@@ -9,6 +9,8 @@ app.use(express.static('src/public'));
 // Use body parser
 app.use(express.urlencoded());
 
-app.use(homeController);
+//ADd coutes
+app.use(routes)
+
 
 app.listen(3000, () => console.log('Server is listening on http://localhost:3000'))
