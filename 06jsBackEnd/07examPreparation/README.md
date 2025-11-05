@@ -11,9 +11,9 @@
 - [x] Install express `npm i express'
 - [x] Init express server  
 - [x] Add public resources
-- [ ] Setup static middleware 
-- [ ] Add body parser middleware
-- [ ] Setup routes file 
+- [x] Setup static middleware 
+- [x] Add body parser middleware `app.use(express.urlencoded())`
 - [ ] Add home controller
+- [ ] Setup routes file 
 
 3. 
