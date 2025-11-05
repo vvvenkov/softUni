@@ -3,6 +3,6 @@
 1. Initialize Projetct
 - [x] Init npm project 
 - [x] Change module system
-- [ ] Add start file
+- [x] Add start file `src/index.js`
 - [ ] Add Dev Script
 - [ ] Config Debugging
