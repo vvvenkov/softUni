@@ -1,0 +1,13 @@
+{
+  "name": "07exampreparation",
+  "version": "1.0.0",
+  "description": "1. Initialize Projetct\r - [ ] Init npm project \r - [ ] Add start file\r - [ ] Change module system\r - [ ] Add Dev Script\r - [ ] Config Debugging",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
