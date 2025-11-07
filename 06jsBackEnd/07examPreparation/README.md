@@ -31,5 +31,5 @@
 - [x] Install mongoose `npm i mongoose`
 - [x] Setup db connection
 - [x] Setup db connection error handling 
-- [ ] Add basic user model
+- [x] Add basic user model
 - [ ]
