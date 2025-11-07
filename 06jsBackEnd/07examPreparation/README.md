@@ -57,8 +57,9 @@
 - [x] Add login post action
 - [x] Add login method to user service
 - [x] Validate user on login
-- [] Validate password on login
-- [] Generate jtw token
+- [x] Validate password on login
+- [x] Add JWT_SECRET to global config file
+- [x] Generate jtw token
 - [] Attach token to cookie
 - [] Login user
 - [] Auto login on register

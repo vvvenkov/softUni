@@ -41,5 +41,7 @@ export default {
         }
 
         const token = jsonwebtoken.sign(payload, JWT_SECRET, { expiredIn: '2h' });
+
+        return token;
     }
 }
