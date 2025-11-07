@@ -1,8 +1,9 @@
-import { JsonWebTokenError } from "jsonwebtoken";
+import jsonwebtoken from "jsonwebtoken";
 import bcrypt from 'bcrypt'
 
 import User from "../models/User.js"
 import { JWT_SECRET } from "../config/index.js";
+import { generateAuthToken } from "../utils/userUtils.js";
 
 export default {
     async register(userData) {
@@ -18,7 +19,11 @@ export default {
             throw new Error('User already exists!')
         }
 
-        return User.create(userData)
+        const newUser = await User.create(userData);
+        const token = generateAuthToken(newUser);
+
+        return token;
+
     },
     async login(username, password) {
         const user = await User.findOne({ username })
@@ -35,13 +40,9 @@ export default {
         }
 
         //generate token
-        const payload = {
-            id: user.id,
-            username,
-        }
-
-        const token = jsonwebtoken.sign(payload, JWT_SECRET, { expiredIn: '2h' });
+        const token = generateAuthToken(user);
 
         return token;
     }
 }
+

@@ -5,6 +5,6 @@ import userController from "./controllers/userController.js";
 const routes = Router();
 
 routes.use(homeController);
-routes.use('/users', userController);
+routes.use('/user', userController);
 
 export default routes;

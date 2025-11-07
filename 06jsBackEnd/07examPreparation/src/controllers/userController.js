@@ -10,8 +10,13 @@ userController.get('/register', (req, res) => {
 userController.post('/register', async (req, res) => {
     const userData = req.body;
 
-    await userService.register(userData);
-    res.redirect('/users/login');
+    const token = await userService.register(userData);
+
+    //Attach token to cookie
+    res.cookie('auth', token)
+
+    // Redirect to home page
+    res.redirect('/');
 });
 
 userController.get('/login', (req, res) => {
