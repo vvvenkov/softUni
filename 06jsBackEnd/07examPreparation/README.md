@@ -43,6 +43,6 @@
 - [x] Create post register action
 - [x] Add user service with register
 - [x] Hash password
-- [] Check rePassword
-- [] Check if user exists
-- [] Register user
+- [x] Check rePassword
+- [x] Check if user exists
+- [x] Register user
