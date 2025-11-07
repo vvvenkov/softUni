@@ -32,4 +32,12 @@
 - [x] Setup db connection
 - [x] Setup db connection error handling 
 - [x] Add basic user model
-- [ ]
+
+5. Registration
+- [x] Install bcrypt `npm i bcyprt`
+- [x] Fix navigation links
+- [x] Add register view
+- [ ] Add user controller
+- [ ] Add register page
+- [ ] Modify register form
+- [ ] 
