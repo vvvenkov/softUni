@@ -12,6 +12,10 @@ userController.post('/register', async (req, res) => {
 
     await userService.register(userData);
     res.redirect('/');
-})
+});
+
+userController.get('/login', (req, res) => {
+    res.render('user/login')
+});
 
 export default userController;

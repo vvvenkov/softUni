@@ -46,3 +46,14 @@
 - [x] Check rePassword
 - [x] Check if user exists
 - [x] Register user
+
+6. Login
+- [x] Add jsonwebtoken `npm i jsonwebwoken`
+- [x] Add cookie parser `npm i cookie-parser`
+- [x] Use cookie parser middleware
+- [x] Add login view
+- [x] Add login page
+- [] Fix login form
+- [] Add login post action
+- [] Add login method to user service
+- []
