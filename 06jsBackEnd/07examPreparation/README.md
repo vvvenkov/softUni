@@ -37,7 +37,12 @@
 - [x] Install bcrypt `npm i bcyprt`
 - [x] Fix navigation links
 - [x] Add register view
-- [ ] Add user controller
-- [ ] Add register page
-- [ ] Modify register form
-- [ ] 
+- [x] Add user controller
+- [x] Add register page
+- [x] Modify register form
+- [x] Create post register action
+- [x] Add user service with register
+- [x] Hash password
+- [] Check rePassword
+- [] Check if user exists
+- [] Register user
