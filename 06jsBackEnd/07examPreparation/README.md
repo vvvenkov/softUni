@@ -53,7 +53,12 @@
 - [x] Use cookie parser middleware
 - [x] Add login view
 - [x] Add login page
-- [] Fix login form
-- [] Add login post action
-- [] Add login method to user service
-- []
+- [x] Fix login form
+- [x] Add login post action
+- [x] Add login method to user service
+- [x] Validate user on login
+- [] Validate password on login
+- [] Generate jtw token
+- [] Attach token to cookie
+- [] Login user
+- [] Auto login on register
