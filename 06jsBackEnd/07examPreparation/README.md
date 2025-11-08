@@ -15,6 +15,7 @@
 - [x] Add body parser middleware `app.use(express.urlencoded())`
 - [x] Add home controller
 - [x] Setup routes file 
+- [] Add error page
 
 3. Handlebars 
 - [x] Install handlebars `npm i express-handlebars`
@@ -80,6 +81,7 @@
 - [x] Create isAuth middlware
 - [x] Create isGuest middleware
 - [x] Add route guards
+- [x] Dynamic navigation
 
 10. Error handling 
 - [x] Add notification
@@ -87,5 +89,5 @@
 - [x] Add error message util
 - [x] Add error handling for register
 - [x] Persist form data in register form
-- [] Add error handling for login
-- [] Persist form data in login form
+- [x] Add error handling for login
+- [x] Persist form data in login form

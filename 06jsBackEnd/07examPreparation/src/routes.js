@@ -7,4 +7,8 @@ const routes = Router();
 routes.use(homeController);
 routes.use('/user', userController);
 
+routes.all('*url', (req, res) => {
+    res.render('notFound')
+})
+
 export default routes;
