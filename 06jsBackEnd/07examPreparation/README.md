@@ -60,6 +60,9 @@
 - [x] Validate password on login
 - [x] Add JWT_SECRET to global config file
 - [x] Generate jtw token
-- [] Attach token to cookie
-- [] Login user
-- [] Auto login on register
+- [x] Attach token to cookie
+- [x] Login user
+- [x] Auto login on register
+
+7. Logout
+- [ ] Add logout action
