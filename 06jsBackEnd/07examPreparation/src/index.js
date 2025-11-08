@@ -5,6 +5,7 @@ import handlebars from 'express-handlebars';
 import routes from './routes.js';
 import initDatabase from './config/dbConfig.js';
 import cookieParser from 'cookie-parser';
+import { auth } from './middlewares/authMiddleware.js';
 
 // Init express();
 const app = express();
@@ -21,6 +22,9 @@ app.use(cookieParser());
 // Use body parser
 app.use(express.urlencoded());
 
+//Use auth middleware
+app.use(auth);
+
 // Config handlebars as view engine
 app.engine('hbs', handlebars.engine({
     extname: 'hbs',
@@ -35,6 +39,9 @@ app.set('view engine', 'hbs');
 
 // Change default views directory
 app.set('views', 'src/views');
+
+// User auth middleware
+app.use(auth);
 
 //Add routes
 app.use(routes)

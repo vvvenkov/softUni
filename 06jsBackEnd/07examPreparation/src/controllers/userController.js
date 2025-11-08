@@ -1,5 +1,6 @@
 import { Router } from "express";
 import userService from "../services/userService.js";
+import { AUTH_COOKIE_NAME } from "../config/index.js";
 
 const userController = Router();
 
@@ -13,7 +14,7 @@ userController.post('/register', async (req, res) => {
     const token = await userService.register(userData);
 
     //Attach token to cookie
-    res.cookie('auth', token)
+    res.cookie(AUTH_COOKIE_NAME, token)
 
     // Redirect to home page
     res.redirect('/');
@@ -30,7 +31,7 @@ userController.post('/login', async (req, res) => {
     const token = await userService.login(username, password)
 
     //Attach token to cookie
-    res.cookie('auth', token);
+    res.cookie(AUTH_COOKIE_NAME, token);
 
     //Redirect
     res.redirect('/')
@@ -38,7 +39,7 @@ userController.post('/login', async (req, res) => {
 });
 
 userController.get('/logout', (req, res) => {
-    res.clearCookie('auth');
+    res.clearCookie(AUTH_COOKIE_NAME);
 
     //regularly you ned invalidation of the token
 

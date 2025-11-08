@@ -65,4 +65,13 @@
 - [x] Auto login on register
 
 7. Logout
-- [ ] Add logout action
+- [x] Add logout action
+
+8. Authentication
+- [x] Auth middleware 
+- [x] Use auth middleware
+- [x] Check if guest
+- [x] Verify token
+- [x] Handle invalid token
+- [] Attach user to request 
+- [] Attach user data to handlebars context
