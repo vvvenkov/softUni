@@ -82,7 +82,10 @@
 - [x] Add route guards
 
 10. Error handling 
-- [] Add notification
-- [] Error message in notification
-- [] Add error handling for register
+- [x] Add notification
+- [x] Error message in notification
+- [x] Add error message util
+- [x] Add error handling for register
+- [x] Persist form data in register form
 - [] Add error handling for login
+- [] Persist form data in login form
