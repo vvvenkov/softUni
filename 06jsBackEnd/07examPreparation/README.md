@@ -77,6 +77,12 @@
 - [x] Attach user data to handlebars context
 
 9. Authorization 
-- [] Create isAuth middlware
-- [] Create isGuest middleware
-- [] Add route guards
+- [x] Create isAuth middlware
+- [x] Create isGuest middleware
+- [x] Add route guards
+
+10. Error handling 
+- [] Add notification
+- [] Error message in notification
+- [] Add error handling for register
+- [] Add error handling for login
