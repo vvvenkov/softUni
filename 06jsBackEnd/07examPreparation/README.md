@@ -81,9 +81,12 @@
 - [x] Create isAuth middlware
 - [x] Create isGuest middleware
 - [x] Add route guards
-- [x] Dynamic navigation
 
-10. Error handling 
+10. Dynamic content
+- [x] Dynamic navigation
+- [] Dynamic titles
+
+11. Error handling 
 - [x] Add notification
 - [x] Error message in notification
 - [x] Add error message util
@@ -91,3 +94,6 @@
 - [x] Persist form data in register form
 - [x] Add error handling for login
 - [x] Persist form data in login form
+
+11. Bonuses
+- [x] Set page title from view
