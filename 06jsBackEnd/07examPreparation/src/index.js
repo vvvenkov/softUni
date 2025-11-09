@@ -1,12 +1,14 @@
 import express from 'express';
 import handlebars from 'express-handlebars';
-
+import expressSession from 'express-session'
 
 import routes from './routes.js';
 import initDatabase from './config/dbConfig.js';
 import cookieParser from 'cookie-parser';
 import { auth } from './middlewares/authMiddleware.js';
-import helpers from './views/helpers.js';
+import helpers from './views/viewHelpers.js';
+import { SESSION_SECRET } from './config/index.js';
+import { tempData } from './middlewares/tempDataMiddleware.js';
 
 // Init express();
 const app = express();
@@ -19,6 +21,14 @@ app.use(express.static('src/public'));
 
 // User cookie-pasrser
 app.use(cookieParser());
+
+// Use express-session
+app.use(expressSession({
+    secret: SESSION_SECRET,
+    resave: 'false',
+    saveUninitialized: true,
+    cookie: { secure: false, httpOnly: true }
+}));
 
 // Use body parser
 app.use(express.urlencoded());
@@ -44,6 +54,9 @@ app.set('views', 'src/views');
 
 // User auth middleware
 app.use(auth);
+
+// Use temp data middlware
+app.use(tempData)
 
 //Add routes
 app.use(routes)

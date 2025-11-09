@@ -97,5 +97,9 @@
 
 11. Bonuses
 - [x] Set page title from view
-- [] Export helpers to external file
+- [x] Export helpers to external file
 - [] Temp data
+    - [x] Install express session
+    - [x] Use express session
+    - [x] Add temp data middleware
+    - [] Use temp data middleware
