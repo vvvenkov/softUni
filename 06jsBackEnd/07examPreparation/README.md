@@ -98,8 +98,9 @@
 11. Bonuses
 - [x] Set page title from view
 - [x] Export helpers to external file
-- [] Temp data
+- [x] Temp data
     - [x] Install express session
     - [x] Use express session
     - [x] Add temp data middleware
-    - [] Use temp data middleware
+    - [x] Use temp data middleware
+- [x] Async jsonwebtoken

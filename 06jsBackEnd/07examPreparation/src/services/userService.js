@@ -18,7 +18,7 @@ export default {
         }
 
         const newUser = await User.create(userData);
-        const token = generateAuthToken(newUser);
+        const token = await generateAuthToken(newUser);
 
         return token;
 
@@ -38,7 +38,7 @@ export default {
         }
 
         //generate token
-        const token = generateAuthToken(user);
+        const token = await generateAuthToken(user);
 
         return token;
     }
