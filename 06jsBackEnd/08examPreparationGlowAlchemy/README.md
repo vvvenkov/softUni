@@ -104,3 +104,7 @@
     - [x] Add temp data middleware
     - [x] Use temp data middleware
 - [x] Async jsonwebtoken
+
+## Steps to use the skeleton project
+- [] Install dependencies `npm install`
+
