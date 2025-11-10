@@ -1,7 +1,7 @@
 import { AUTH_COOKIE_NAME, JWT_SECRET } from "../config/index.js";
 import jsonwebtoken from "../lib/jsonwebtoken.js";
 
-export function auth(req, res, next) {
+export async function auth(req, res, next) {
     const token = req.cookies[AUTH_COOKIE_NAME];
 
 
@@ -12,7 +12,7 @@ export function auth(req, res, next) {
 
 
     try {
-        const user = jsonwebtoken.verify(token, JWT_SECRET);
+        const user = await jsonwebtoken.verify(token, JWT_SECRET);
 
         req.user = user;
         req.isAuthenticated = true;
