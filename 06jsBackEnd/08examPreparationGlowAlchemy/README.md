@@ -106,5 +106,7 @@
 - [x] Async jsonwebtoken
 
 ## Steps to use the skeleton project
-- [] Install dependencies `npm install`
+- [x] Install dependencies `npm install`
+- [x] Add new resources
+
 
