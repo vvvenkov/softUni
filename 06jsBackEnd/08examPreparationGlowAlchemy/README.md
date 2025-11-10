@@ -108,5 +108,5 @@
 ## Steps to use the skeleton project
 - [x] Install dependencies `npm install`
 - [x] Add new resources
-
+- [x] Replace main layout
 
