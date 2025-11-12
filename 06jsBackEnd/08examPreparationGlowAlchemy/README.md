@@ -111,4 +111,5 @@
 - [x] Replace main layout
 - [x] Replace home page
 - [x] Modify navigation links
-- [] repalce login page
+- [x] Replace login page
+- [x] Modify user model 
