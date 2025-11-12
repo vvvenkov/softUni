@@ -113,3 +113,4 @@
 - [x] Modify navigation links
 - [x] Replace login page
 - [x] Modify user model 
+- [x] Replace 404 page
