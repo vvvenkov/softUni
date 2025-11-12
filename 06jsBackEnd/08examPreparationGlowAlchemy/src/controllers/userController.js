@@ -33,12 +33,12 @@ userController.get('/login', isGuest, (req, res) => {
 });
 
 userController.post('/login', isGuest, async (req, res) => {
-    const { username, password } = req.body;
+    const { email, password } = req.body;
 
     try {
 
         // Login user
-        const token = await userService.login(username, password)
+        const token = await userService.login(email, password)
 
         //Attach token to cookie
         res.cookie(AUTH_COOKIE_NAME, token);
@@ -46,7 +46,7 @@ userController.post('/login', isGuest, async (req, res) => {
         //Redirect
         res.redirect('/')
     } catch (err) {
-        res.render('users/login', { error: getErrorMessage(err), user: { username } });
+        res.render('users/login', { error: getErrorMessage(err), user: { email } });
     }
 
 });
