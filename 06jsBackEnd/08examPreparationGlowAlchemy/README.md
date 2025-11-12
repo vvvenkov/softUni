@@ -110,4 +110,5 @@
 - [x] Add new resources
 - [x] Replace main layout
 - [x] Replace home page
-- [] Modify navigation links
+- [x] Modify navigation links
+- [] repalce login page

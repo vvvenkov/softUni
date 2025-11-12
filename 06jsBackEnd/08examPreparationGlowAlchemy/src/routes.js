@@ -5,7 +5,7 @@ import userController from "./controllers/userController.js";
 const routes = Router();
 
 routes.use(homeController);
-routes.use('/user', userController);
+routes.use('/users', userController);
 
 routes.all('*url', (req, res) => {
     res.render('notFound')

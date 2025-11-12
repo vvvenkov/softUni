@@ -23,13 +23,13 @@ export async function auth(req, res, next) {
     } catch (err) {
         res.clearCookie('AUTH_COOKIE_NAME');
 
-        res.redirect('/user/login');
+        res.redirect('/users/login');
     }
 }
 
 export function isAuth(req, res, next) {
     if (!req.isAuthenticated) {
-        res.redirect('/user/login')
+        res.redirect('/users/login')
     }
 
     next();
