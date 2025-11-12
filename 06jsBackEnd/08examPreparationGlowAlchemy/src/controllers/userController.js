@@ -46,7 +46,7 @@ userController.post('/login', isGuest, async (req, res) => {
         //Redirect
         res.redirect('/')
     } catch (err) {
-        res.render('users/login', { error: getErrorMessage(err), user: { email } });
+        res.render('users/login', { error: getErrorMessage(err), user: { userData } });
     }
 
 });

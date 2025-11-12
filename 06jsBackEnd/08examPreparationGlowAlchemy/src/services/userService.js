@@ -11,7 +11,7 @@ export default {
         }
 
         //Check if user exists
-        const user = await User.findOne({ username: userData.username });
+        const user = await User.findOne({ email: userData.email });
 
         if (user) {
             throw new Error('User already exists!')
@@ -24,17 +24,17 @@ export default {
 
     },
     async login(username, password) {
-        const user = await User.findOne({ username })
+        const user = await User.findOne({ email })
 
         //validate user 
         if (!user) {
-            throw new Error('Ivalid username or Password!');
+            throw new Error('Ivalid email or Password!');
         }
 
         //validate password
         const isValid = await bcrypt.compare(password, user.password);
         if (!isValid) {
-            throw new Error('Ivalid username or Password!')
+            throw new Error('Ivalid email or Password!')
         }
 
         //generate token

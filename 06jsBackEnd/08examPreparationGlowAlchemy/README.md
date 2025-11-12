@@ -113,5 +113,7 @@
 - [x] Modify navigation links
 - [x] Replace login page
 - [x] Modify user model 
-- [x] Modify login and register actions
+- [x] Modify login and register actions (change username to email)
+- [x] Modify user service
+- [x] Modify token generation
 - [x] Replace 404 page

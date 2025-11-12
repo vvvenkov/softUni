@@ -6,7 +6,8 @@ import jsonwebtoken from '../lib/jsonwebtoken.js';
 export async function generateAuthToken(user) {
     const payload = {
         id: user.id,
-        username: user.username,
+        email: user.email,
+        name: user.name,
     }
 
     const token = await jsonwebtoken.sign(payload, JWT_SECRET, { expiresIn: '2h' });
