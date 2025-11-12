@@ -109,4 +109,5 @@
 - [x] Install dependencies `npm install`
 - [x] Add new resources
 - [x] Replace main layout
-
+- [x] Replace home page
+- [] Modify navigation links

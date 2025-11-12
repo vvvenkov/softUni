@@ -12,27 +12,27 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Catalog</a></li>
-                <li><a href="#">Search</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/search">Search</a></li>
                 {{#if isAuthenticated}}
-                <li><a href="#">Create</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="/products/create">Add Product</a></li>
+                <li><a href="/users/logout">Logout</a></li>
                 {{else}}
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="/users/login">Login</a></li>
+                <li><a href="/users/register">Register</a></li>
                 {{/if}}
             </ul>
         </nav>
     </header>
-
-    {{#if error}}
-    <div class="error-containers">
-        <p>{{error}}</p>
-    </div>
-    {{/if}}
-    
     <main>
+
+        {{#if error}}
+        <div class="error-containers">
+            <p>{{error}}</p>
+        </div>
+        {{/if}}
+
         {{{body}}}
     </main>
     <footer>
