@@ -43,7 +43,7 @@ productController.get('/:productId/details', async (req, res) => {
     // Get product from db
     const product = await productService.getOne(productId);
 
-    // product.ingredients = product.ingredients.replaceAll(',', " / ")
+    
     // Render details page
     res.render('product/details', { product });
 
