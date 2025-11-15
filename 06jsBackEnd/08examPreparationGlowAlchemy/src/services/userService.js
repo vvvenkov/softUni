@@ -23,7 +23,7 @@ export default {
         return token;
 
     },
-    async login(username, password) {
+    async login(email, password) {
         const user = await User.findOne({ email })
 
         //validate user 

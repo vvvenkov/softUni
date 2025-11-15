@@ -46,7 +46,7 @@ userController.post('/login', isGuest, async (req, res) => {
         //Redirect
         res.redirect('/')
     } catch (err) {
-        res.render('users/login', { error: getErrorMessage(err), user: { userData } });
+        res.render('users/login', { error: getErrorMessage(err), email });
     }
 
 });
@@ -54,9 +54,11 @@ userController.post('/login', isGuest, async (req, res) => {
 userController.get('/logout', isAuth, (req, res) => {
     res.clearCookie(AUTH_COOKIE_NAME);
 
-    //regularly you ned invalidation of the token
+    //regularly you need invalidation of the token
 
     res.redirect('/');
 });
+
+
 
 export default userController;
