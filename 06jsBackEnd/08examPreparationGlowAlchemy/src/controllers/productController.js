@@ -43,10 +43,35 @@ productController.get('/:productId/details', async (req, res) => {
     // Get product from db
     const product = await productService.getOne(productId);
 
-    
-    // Render details page
-    res.render('product/details', { product });
+    // Chekc if recommended
+    const isRecommended = product.recommends.includes(req.user?.id)
 
+    // Check if owner
+    const isOwner = product.owner.equals(req.user?.id)
+
+    const recommendCount = product.recommends.length;
+
+    // Render details page
+    res.render('product/details', { product, isOwner, isRecommended, recommendCount });
+
+});
+
+productController.get('/:productId/recommend', isAuth, async (req, res) => {
+    // Get productId
+    const productId = req.params.productId;
+
+    // Get userId
+    const userId = req.user.id;
+
+    try {
+        // Recommend product
+        await productService.recommend(productId, userId);
+
+        // Redirect to details page
+        res.redirect(`/products/${productId}/details`)
+    } catch (err) {
+        res.render('notFound', { error: getErrorMessage(err) })
+    }
 });
 
 export default productController;

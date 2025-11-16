@@ -13,10 +13,10 @@ const productSchema = new Schema({
         type: String,
         required: true,
     },
-    ingredients: {
+    ingredients: [{
         type: String,
         required: true,
-    },
+    }],
     benefits: {
         type: String,
         required: true,
@@ -29,11 +29,15 @@ const productSchema = new Schema({
         type: String,
         required: true,
     },
+    recommends: [{
+        type: Types.ObjectId,
+        ref: 'User',
+    }],
     owner: {
         type: Types.ObjectId,
         ref: 'User',
     },
-    
+
 
 });
 
