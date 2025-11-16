@@ -4,6 +4,9 @@ export default {
     async getAll() {
         return Product.find();
     },
+    getLatest() {
+        return Product.find().sort({ _id: -1 }).limit(3);
+    },
     getOne(productId) {
         return Product.findById(productId);
     },
