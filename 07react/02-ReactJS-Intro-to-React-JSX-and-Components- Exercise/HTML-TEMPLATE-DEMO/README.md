@@ -5,3 +5,6 @@
 - [x] Install packages `npm i`
 - [x] Run reach app `npm run dev`
 - [x] Cleanup default react app
+- [x] Add template resources
+- [x] Add html to App.jsx componets
+- [x] Clean up jsx errors
