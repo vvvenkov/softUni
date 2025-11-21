@@ -11,9 +11,7 @@ export default {
         return Product.findById(productId);
     },
     create(productData, ownerId) {
-        const ingredients = productData.ingredients.split(', ')
-
-        return Product.create({ ...productData, ingredients, owner: ownerId })
+        return Product.create({ ...productData, owner: ownerId })
     },
     async recommend(productId, userId) {
         const product = await this.getOne(productId);
@@ -28,6 +26,25 @@ export default {
         return product.save();
 
         // return Product.findOneAndUpdate(productId, { $push: { recommends: userId } })
-    }
+    },
+    async delete(productId, userId) {
+        const product = await this.getOne(productId);
 
+        if (!product.owner.equals(userId)) {
+            throw new Error('Only the owner can delete this product!')
+        };
+
+        return Product.findByIdAndDelete(productId);
+    },
+    async edit(productId, productData, userId) {
+        // Check if owner
+        const product = await Product.findById(productId);
+
+        if (!product.owner.equals(userId)) {
+            throw new Error('You need to be the owner of this product in order to edit it!')
+        }
+
+        // Edit product
+        return Product.findByIdAndUpdate(productId, productData, { runValidators: true });
+    }
 }

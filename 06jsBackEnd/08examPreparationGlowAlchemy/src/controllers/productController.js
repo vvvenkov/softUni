@@ -74,4 +74,51 @@ productController.get('/:productId/recommend', isAuth, async (req, res) => {
     }
 });
 
+productController.get('/:productId/delete', isAuth, async (req, res) => {
+    // Get product id
+    const productId = req.params.productId;
+
+    const userId = req.user.id;
+
+    try {
+        // Delete product 
+        await productService.delete(productId, userId);
+
+        // Redirect
+        res.redirect('/products')
+    } catch (err) {
+        res.render('notFound', { error: 'Only the owner can delete this product!' })
+    }
+});
+
+productController.get('/:productId/edit', isAuth, async (req, res) => {
+    // Get product id
+    const productId = req.params.productId;
+
+    // Get product
+    const product = await productService.getOne(productId);
+
+    // Render edit page
+    res.render('product/edit', { product })
+});
+
+productController.post('/:productId/edit', isAuth, async (req, res) => {
+    // Get product id
+    const productId = req.params.productId;
+
+    // Get product data
+    const productData = req.body;
+
+    //Get user id
+    const userId = req.user.id;
+
+    try {
+        await productService.edit(productId, productData, userId);
+
+        res.redirect(`/products/${productId}/details`)
+    } catch (err) {
+        res.render('product/edit', { error: getErrorMessage(err), product: productData })
+    }
+});
+
 export default productController;

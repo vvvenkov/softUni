@@ -32,8 +32,8 @@
 {{#if isAuthenticated}}
 <div class="command">
     {{#if isOwner}}
-    <a href="#">Edit</a>
-    <a href="#">Delete</a>
+    <a href="/products/{{product.id}}/edit">Edit</a>
+    <a href="/products/{{product.id}}/delete">Delete</a>
     {{else if isRecommended}}
     <p>You've already recommenden this product!</p>
     {{else}}
