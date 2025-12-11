@@ -1,0 +1,19 @@
+{{#each products}}
+
+<li class="property">
+    <img src="{{image}}" />
+    <p>
+        <strong>Type: {{product}}</strong><span class="type"></span>
+    </p>
+    <p>
+        <strong>Area: {{area}}</strong><span class="area"></span>
+    </p>
+    <p>
+        <strong>Location: {{location}} </strong><span class="location"></span>
+    </p>
+    <a class="details-btn" href="/product/{{id}}/details">Details</a>
+</li>
+
+{{else}}
+<p class="no-post">There are no properties yet!</p>
+{{/each}}

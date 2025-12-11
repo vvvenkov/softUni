@@ -1,0 +1,18 @@
+<!-- create Page (Only for logged-in users) -->
+<section id="create">
+    <div class="form">
+        <h2>Add Property</h2>
+        <form method="POST" class="create-form">
+            <input type="text" id="type" name="type" value="{{product.name}}" placeholder="Type" />
+            <input type="text" id="location" name="location" value="{{product.location}}" placeholder="Location" />
+            <input type="number" id="area" name="area" value="{{product.area}}" placeholder="Area" />
+            <input type="text" id="image-url" name="image" value="{{product.image}}" placeholder="Image URL" />
+            <input type="number" id="price" name="price" value="{{product.price}}" placeholder="Price" />
+            <input type="number" id="contact" name="contact" value="{{product.contact}}"
+                placeholder="For Contacts..." />
+            <textarea id="description" placeholder="Description..." name="description"
+                value={{product.name}}></textarea>
+            <button type="submit">Create</button>
+        </form>
+    </div>
+</section>

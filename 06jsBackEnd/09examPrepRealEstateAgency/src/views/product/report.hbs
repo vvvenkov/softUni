@@ -1,0 +1,21 @@
+<section id="report-section">
+    <h2>Report</h2>
+    <ul class="report-list">
+        {{#if products.length}}
+            {{#each products}}
+                <li class="report-property">
+                    <img src="{{image.[0]}}" alt="{{type}}" />
+                    <div>
+                        <h3>{{type}}</h3>
+                        <p><strong>Price:</strong> <br> {{price}} EUR</p>
+                        <p><strong>Contact:</strong> <br> {{contact}}</p>
+                        <p><strong>Location:</strong> <br>{{location}}</p>
+                        <p><strong>Area:</strong> <br>{{area}} sq.m</p>
+                    </div>
+                </li>
+            {{/each}}
+        {{else}}
+            <h2 id="no-post">There are no properties yet!</h2>
+        {{/if}}
+    </ul>
+</section>

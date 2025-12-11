@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Home Page</title>
+</head>
+
+<body>
+    {{#if error}}
+    <div>
+        <div class="errorContainer">
+            {{error}}
+        </div>
+    </div>
+    {{/if}}
+
+
+    <div id="wrapper">
+        <header>
+            <!-- Navigation -->
+            <nav>
+                <div>
+                    <a href="/">Home</a>
+                    <a href="/product">Dashboard</a>
+                    <a href="/product/report">Report</a>
+                </div>
+
+                <!-- Logged-in users -->
+                {{#if isAuthenticated}}
+                <div class="user">
+                    <a href="/product/create">Add Property</a>
+                    <a href="/user/logout">Logout</a>
+                </div>
+                {{else}}
+                <!-- Guest users -->
+                <div class="guest">
+                    <a href="/user/login">Login</a>
+                    <a href="/user/register">Register</a>
+                </div>
+                {{/if}}
+
+            </nav>
+        </header>
+
+        <main>
+            {{{body}}}
+        </main>
+        <footer>SoftUni JS Back-End Exam 2025 &copy;</footer>
+    </div>
+</body>
+
+</html>
+
+
+
+
+{{!--
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Catalog</a></li>
+                <li><a href="#">Search</a></li>
+
+                {{#if isAuthenticated}}
+                <li><a href="#">Create</a></li>
+                <li><a href="/user/logout">Logout</a></li>
+                {{else}}
+                <li><a href="/user/login">Login</a></li>
+                <li><a href="/user/register">Register</a></li>
+                {{/if}}
+            </ul>
+        </nav>
+    </header>
+
+    {{#if error}}
+    <div class="error-containers">
+        <p>{{error}}</p>
+    </div>
+    {{/if}}
+
+    <main>
+        {{{body}}}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cosmic Explorer. All rights reserved.</p>
+    </footer>
+    --}}

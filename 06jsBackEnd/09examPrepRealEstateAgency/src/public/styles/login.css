@@ -1,0 +1,17 @@
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.form {
+background: #ffffff;
+background: linear-gradient(45deg, rgba(255, 255, 255, 0.69) 49%, rgba(0, 0, 0, 0.67) 49%);
+  max-width: 460px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 45px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.682), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
