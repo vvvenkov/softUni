@@ -1,0 +1,38 @@
+Configuring PostgreSQL for linux fedora:
+
+open the postgre config file:
+sudo nano /etc/postgresql/18/main/postgresql.conf
+
+Find:
+listen_addresses = 'localhost'
+
+Change to:
+listen_addresses = '*'
+(or explicitly 10.0.0.8)
+
+Allow your client in pg_hba.conf
+Edit:
+sudo nano /etc/postgresql/18/main/pg_hba.conf
+
+Add at the bottom:
+host    all     all     10.0.0.0/24     scram-sha-256
+(Adjust subnet if pgAdmin is on a different network.)
+
+Reload:
+sudo systemctl reload postgresql-18
+sudo systemctl restart postgresql-18
+
+check if it's listening on the correct port
+ss -lntp | grep postgres
+
+Set or reset the postgres password
+
+On the PostgreSQL server:
+sudo -u postgres psql
+
+Then inside psql:
+ALTER USER postgres PASSWORD 'YourStrongPassword';
+\q
+
+Replace 'YourStrongPassword' with a secure password.
+Remember this password — you’ll need it in pgAdmin.
