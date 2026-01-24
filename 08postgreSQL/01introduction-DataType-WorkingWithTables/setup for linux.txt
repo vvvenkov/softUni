@@ -1,18 +1,19 @@
-update your system   (curl is needed)
-postgresql.org
-pgadmin.org (install either desktop or web version)
+You need to set a password for the user:
 
+1. update your system   (curl is needed)
+2. postgresql.org
+3. pgadmin.org (install either desktop or web version)
 
-in pgadmin:
+4. in pgadmin:
 server name and hostname should be localhost
 username is postgres
 
-sudo -u username psql
+4:
+$ sudo -u username psql
+(postgres)
 
-in postgres
+inside the shell:
+$ alter user postgres password "password";
+(or set any new user)
 
-alter user postgres with password "password"
-quit
-
-use password in pgadmin
-save
+5: Use password in PgAdmin
