@@ -1,0 +1,8 @@
+C:\Users\Venelin\git\softuni\09devOps\04.automatedTesting\06-Exercises-Automated-Testing-Resources\2-SeleniumIDE\SeleniumIDE\SeleniumIDE\obj\Debug\net8.0\SeleniumIde.csproj.AssemblyReference.cache
+C:\Users\Venelin\git\softuni\09devOps\04.automatedTesting\06-Exercises-Automated-Testing-Resources\2-SeleniumIDE\SeleniumIDE\SeleniumIDE\obj\Debug\net8.0\SeleniumIde.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Venelin\git\softuni\09devOps\04.automatedTesting\06-Exercises-Automated-Testing-Resources\2-SeleniumIDE\SeleniumIDE\SeleniumIDE\obj\Debug\net8.0\SeleniumIde.gentestingplatformentrypointinputcache.cache
+C:\Users\Venelin\git\softuni\09devOps\04.automatedTesting\06-Exercises-Automated-Testing-Resources\2-SeleniumIDE\SeleniumIDE\SeleniumIDE\obj\Debug\net8.0\SeleniumIde.genautoregisteredextensionsinputcache.cache
+C:\Users\Venelin\git\softuni\09devOps\04.automatedTesting\06-Exercises-Automated-Testing-Resources\2-SeleniumIDE\SeleniumIDE\SeleniumIDE\obj\Debug\net8.0\SeleniumIde.AssemblyInfoInputs.cache
+C:\Users\Venelin\git\softuni\09devOps\04.automatedTesting\06-Exercises-Automated-Testing-Resources\2-SeleniumIDE\SeleniumIDE\SeleniumIDE\obj\Debug\net8.0\SeleniumIde.AssemblyInfo.cs
+C:\Users\Venelin\git\softuni\09devOps\04.automatedTesting\06-Exercises-Automated-Testing-Resources\2-SeleniumIDE\SeleniumIDE\SeleniumIDE\obj\Debug\net8.0\SeleniumIde.csproj.CoreCompileInputs.cache
+C:\Users\Venelin\git\softuni\09devOps\04.automatedTesting\06-Exercises-Automated-Testing-Resources\2-SeleniumIDE\SeleniumIDE\SeleniumIDE\obj\Debug\net8.0\SeleniumIde.sourcelink.json

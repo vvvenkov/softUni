@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/venelin/git/softuni/09devOps/03.automatedTesting/06-Exercises-Automated-Testing-Resources/2-SeleniumIDE/SeleniumIDE/SeleniumIDE/SeleniumIde.csproj": {}
+    "C:\\Users\\Venelin\\git\\softuni\\09devOps\\04.automatedTesting\\06-Exercises-Automated-Testing-Resources\\2-SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\SeleniumIde.csproj": {}
   },
   "projects": {
-    "/home/venelin/git/softuni/09devOps/03.automatedTesting/06-Exercises-Automated-Testing-Resources/2-SeleniumIDE/SeleniumIDE/SeleniumIDE/SeleniumIde.csproj": {
+    "C:\\Users\\Venelin\\git\\softuni\\09devOps\\04.automatedTesting\\06-Exercises-Automated-Testing-Resources\\2-SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\SeleniumIde.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/venelin/git/softuni/09devOps/03.automatedTesting/06-Exercises-Automated-Testing-Resources/2-SeleniumIDE/SeleniumIDE/SeleniumIDE/SeleniumIde.csproj",
+        "projectUniqueName": "C:\\Users\\Venelin\\git\\softuni\\09devOps\\04.automatedTesting\\06-Exercises-Automated-Testing-Resources\\2-SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\SeleniumIde.csproj",
         "projectName": "SeleniumIde",
-        "projectPath": "/home/venelin/git/softuni/09devOps/03.automatedTesting/06-Exercises-Automated-Testing-Resources/2-SeleniumIDE/SeleniumIDE/SeleniumIDE/SeleniumIde.csproj",
-        "packagesPath": "/home/venelin/.nuget/packages/",
-        "outputPath": "/home/venelin/git/softuni/09devOps/03.automatedTesting/06-Exercises-Automated-Testing-Resources/2-SeleniumIDE/SeleniumIDE/SeleniumIDE/obj/",
+        "projectPath": "C:\\Users\\Venelin\\git\\softuni\\09devOps\\04.automatedTesting\\06-Exercises-Automated-Testing-Resources\\2-SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\SeleniumIde.csproj",
+        "packagesPath": "C:\\Users\\Venelin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Venelin\\git\\softuni\\09devOps\\04.automatedTesting\\06-Exercises-Automated-Testing-Resources\\2-SeleniumIDE\\SeleniumIDE\\SeleniumIDE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/venelin/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Venelin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,31 +48,35 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.1.0, )"
+              "version": "[18.0.1, )"
             },
             "NUnit": {
               "target": "Package",
-              "version": "[3.13.3, )"
+              "version": "[4.4.0, )"
             },
             "NUnit.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.3.0, )"
+              "version": "[4.11.2, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.2.1, )"
+              "version": "[6.1.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.21.0, )"
+              "version": "[4.40.0, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[125.0.6422.14100, )"
+              "version": "[144.0.7559.10900, )"
             },
             "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.2, )"
+              "version": "[6.0.4, )"
             }
           },
           "imports": [
@@ -84,22 +90,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
